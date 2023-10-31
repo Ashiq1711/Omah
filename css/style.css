@@ -1,0 +1,349 @@
+/* =================COMMON CSS========================= */
+*{
+    margin: 0;
+    padding: 0;
+
+}
+body{
+    font-family: 'Poppins', sans-serif;
+}
+.container{
+    width: 1166px;
+    margin: 0 auto;
+}
+/* <!-- ======================NAV START ===================== --> */
+nav{
+    padding-top: 50px; 
+  
+    
+   
+}
+nav .flex{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+nav ul li{
+    list-style: none;
+    display: inline-block;
+    margin-left: 100px;
+    font-weight: 300;
+    font-size: 16px;
+    color: #203239;
+    position: relative;
+
+}
+nav ul li:hover{
+    font-weight: 500;
+
+}
+nav ul li::after{
+    content: '';
+    position: absolute;
+    width: 0px;
+    height: 3px;
+    background-color: orange;
+    left: 50%;
+    border-radius: 10px;
+    /* bottom: -8px; */
+    top: 30px;
+    transform: translateX(-50%);
+    
+}
+nav ul li:hover::after{
+    width: 30px;
+    transition: .4s;
+
+}
+/* <!-- ==========================NAV END ======================= --> */
+
+/* <!-- ======================BANNER START ===================== --> */
+#banner{
+   
+    background-color: #EEEDDE;
+    /* position: relative; */
+    /* margin-top: 165px; */
+    padding-top: 188px;
+    padding-bottom: 120px;
+}
+.main{
+    display: flex;
+}
+.banner_left{
+    width: 68%;
+}
+.banner_right{
+    width: 32%;
+}
+.banner_left h1{
+    font-weight: 600;
+    font-size: 56px;
+    color: #203239;
+}
+.banner_left p{
+    color: rgba(32, 50, 57, 0.55) ;
+    font-weight: 200;
+    font-size: 16px;
+}
+input{
+    width: 508px;
+    height: 70px;
+    border-radius: 15px;
+    border: none;
+}
+input::placeholder{
+    padding: 23px 56px 101px;
+    font-weight: 200;
+    font-size: 16px;
+    color: rgba(32, 50, 57, 0.55);
+
+}
+.inputbox{
+    position: relative;
+}
+.inputbox .icon{
+    position: absolute;
+    left: 0;
+    top: 20px;
+    left: 20px;
+}
+.inputbox .icon{
+    font-size: 24px;
+}
+.inputbox button{
+    /* padding: 23px 41px; */
+    border-radius: 15px;
+    border: none;
+    background-color: white;
+    width: 138px;
+    height: 70px;
+    color: rgba(32, 50, 57, 0.55);
+    font-size: 16px;
+    margin-left: 15px;
+}
+/* <!-- ==========================BANNER END ======================= --> */
+/* <!-- ==========================PROPERTICE START ======================= --> */
+#propertice{
+    height: 672px;
+    background-color: white;
+}
+#propertice .title h1{
+    font-size: 36px;
+    font-weight: 600;
+    color: rgba(32, 50, 57, 1);
+    margin-top: 100PX;
+    
+}
+#propertice .main{
+    display: flex;
+    justify-content: space-between;
+    margin-top: 64px;
+    padding: 100px 0;
+}
+#propertice .main .left{
+    height: 300px;
+    width: 300px;
+    border: 1px solid transparent;
+    border-radius: 10px;
+    transition: .6s;
+
+
+
+
+}#propertice .main .left:hover{
+    border: 1px solid rgba(238, 237, 222, 1);
+    border-radius: 10px;
+    
+}
+
+#propertice .section1{
+    display: flex;
+    justify-content: space-between;
+    padding: 20px 33px;
+    
+}
+#propertice .section1 h3{
+    font-size: 16px;
+    color: rgba(32, 50, 57, 1);
+    position: relative;
+}
+#propertice .section1 h3::after{
+    content: '';
+    width: 8px;
+    height: 30px;
+    background:  rgba(255, 117, 39, 1);
+    border-radius: 6px;
+    position: absolute;
+    top: 0;
+    left: 0;
+    margin-left: -33px;
+}
+#propertice .section1 .orange{
+    color: rgba(255, 117, 39, 1) ;
+
+}
+#propertice .section1 h4{
+    font-size: 16px;
+    color: rgba(255, 117, 39, 1);
+}
+#propertice .left p{
+    color: rgba(32, 50, 57, 0.55);
+    font-weight: 300;
+    font-size: 16px;
+    padding: 20px 33px;
+}
+#propertice a{
+    text-decoration: none;
+    color: wheat;
+    padding-left: 33px;
+    color: rgba(32, 50, 57, 1);
+    font-size: 16px;
+    font-weight: 500;
+   
+}
+#propertice i{
+    margin-left: 8px;
+
+}
+
+/* <!-- ==========================PROPERTICE END ======================= --> */
+
+/* <!-- ==========================FAVORIT START======================= --> */
+#favorit{
+    height: 836px;
+    background-color: #EEEDDE;
+}
+#favorit .main{
+    display: flex;
+    justify-content: space-between;
+    margin-top: 64px;
+    position: relative ;
+}
+#favorit .title p{
+    color: rgba(255, 117, 39, 1);
+    font-size: 16px;
+    font-weight: 500;
+    padding-top: 68px;
+   
+    
+
+}
+#favorit .title h2{
+    color: rgba(32, 50, 57, 1);
+    font-weight: 600;
+    font-size: 36px;
+    margin-top: 8px;
+
+}
+#favorit .img-home{
+    width: 50%;
+    
+}
+#favorit .resident-text-section{
+    width: 50%;
+}
+
+#favorit .resident-text h1{
+    font-size: 36px;
+    font-weight: 500;
+    line-height: 150%;
+    color: rgba(32, 50, 57, 1);
+}
+#favorit .resident-text p{
+    color: rgba(32, 50, 57, 1);
+    font-size: 16px;
+    font-weight: 300;
+    line-height: 30px;
+}
+#favorit .resident-2{
+    position: absolute;
+    top: 0;
+    left: 0;
+    margin-top: 60px;
+    margin-left: 167px;
+}
+#favorit .btn-box{
+    display: flex;
+}
+#favorit .btn1{
+    padding: 13px  41px;
+    border-radius: 10px;
+    position: relative;
+}
+#favorit .call{
+    position: absolute;
+    margin-left: 20px;
+    margin-top: 10px;
+}
+/* <!-- ==========================FAVORIT END ======================= --> */
+/* <!-- ==========================Resident Start ======================= --> */
+#resident{
+    height: 890px;
+
+}
+#resident .title p{
+    color: rgba(255, 117, 39, 1);
+    font-size: 16px;
+    font-weight: 500;
+    margin-top: 64px;
+
+}
+#resident .title h1{
+    color: rgba(32, 50, 57, 1);
+    font-weight: 600;
+    font-size: 36px;
+    margin-top: 8px;
+
+}
+#resident .main{
+    display: flex;
+    justify-content: space-between;
+    margin-top: 64px;
+}
+#resident .main .left h2{
+    font-size: 24px;
+    font-weight: 500;
+    color: #203239;
+}
+#resident .main .left p{
+    font-weight: 300;
+    color: rgba(32, 50, 57, 1);
+    font-size: 16px;
+    line-height: 30px;
+
+}
+#resident .text{
+    height: 134px;
+    width: 356px;
+    margin-top: 16px;
+}
+
+/* <!-- ==========================Resident END ======================= --> */
+
+#end{
+    height: 495px;
+    background-color: #EEEDDE;
+}
+#end .flex{
+    display: flex;
+}
+#end .call-section{
+    width: 70%;
+}
+#end .logo-section{
+    width: 30%;
+}
+.box1{
+    width: 274px;
+    height: 167px;
+    background-color: white;
+    border-radius: 10px;
+}
+.box1 i .call{
+    height: 24px;
+    width: 24px;
+}
+.box1 p{
+    margin-left: 104px;
+    margin-top: 25px;
+}
